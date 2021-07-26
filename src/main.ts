@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import 'pinpoint-node-agent';
-import tracer from './datadog';
+import './datadog';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

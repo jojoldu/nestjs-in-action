@@ -34,7 +34,7 @@ tracer.use('redis', {
 
 tracer.init({
   env: service, // Set an application’s environment e.g. prod, pre-prod, stage, etc.
-  service: `${service}-tracer`, // The service name to be used for this program.
+  service: `tracer-${service}`, // The service name to be used for this program.
   enabled: true, // Whether to enable the tracer.
   plugins: true, // Whether or not to enable automatic instrumentation of external libraries using the built-in plugins.
 }); // initialized in a different file to avoid hoisting.

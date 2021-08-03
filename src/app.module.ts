@@ -5,7 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserController } from './user.controller';
 import { UserService } from './service/UserService';
-import { UserRepository } from './entity/UserRepository';
+import { UserRepository } from './entity/user/UserRepository';
 import { DatabaseModule } from './DatabaseModule';
 
 @Module({
